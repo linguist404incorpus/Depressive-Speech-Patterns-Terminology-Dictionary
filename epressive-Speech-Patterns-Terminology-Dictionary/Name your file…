@@ -1,0 +1,73 @@
+ask_the_dict = input('Find possible names of your variable:')
+if ask_the_dict == 'pitch' or 'Pitch' or 'Frequency' or 'frequency' or 'Fundamental Frequency' or 'fundamental frequency' or 'F0' or 'Average Pitch' or 'average pitch':
+    print('It might be called as "Pitch""Frequency""Fundamental Frequency""F0" or "Average Pitch" for pitch in papers.')
+
+if ask_the_dict == 'F2' or 'F^2':
+    print('It might be called as "F2" or "F^2" for second formant transition in papers.')
+
+if ask_the_dict == 'Rate' or 'rate' or 'Speaking Rate' or 'speaking rate':
+    print('It might be called as "Rate" or "Speaking Rate" for speaking rate in papers.')
+
+if ask_the_dict == 'SPT' or 'SPTa' or 'SPTb' or 'SPT(%)a' or 'SPT(%)b' or 'Pause Average Length' or 'pause average length' or 'Duration of Pauses' or 'duration of pauses' or 'P(%)' or 'P' or 'Pausetime' or 'pausetime' :
+    print('It might be called as "SPT""SPTa""SPTb""SPT(%)a""SPT(%)b""Pause Average Length""Duration of Pauses""P(%)""P" or "Pausetime" for speech pause time in papers.')
+
+if ask_the_dict == 'F0Δ' or 'Inflection' or 'inflection' or 'PPR' or 'APR':
+    print('It might be called as "F0Δ""Inflection""PPR" or "APR" for pitch range(APR stands for average pitch range) in papers.')
+
+if ask_the_dict == 'Pause' or 'Frequency of Pauses' or 'frequency of pauses':
+    print('It might be called as "Pause""Frequency of Pauses" for pause number in papers.')
+
+if ask_the_dict == 'Mean Duration of Vocalizations' or 'mean duration of vocalizations' or 'Phonation Time' or 'phonation time':
+    print('It might be called as "Mean Duration of Vocalizations" or "Phonation Time" for speaking time in papers.')
+    
+if ask_the_dict == 'Amplitude' or 'amplitude' or 'Loudness' or 'loudness'or 'Emphasis' or 'emphasis':
+    print('It might be called as "Amplitude" or "Loudness" (Emphasis is used to measure the variability of amplitude) for the volumn of speaking in papers.')
+
+    
+ask_the_user = input('Is what you are finding among them(Yes or No)?')
+if ask_the_user == 'Yes':
+    print('Good luck with your work! Warning: The same feature might be measured in different units in different papers.')
+else:
+    print('Can you help me store more possible names?')
+
+ask_user = input('Where(which feature)does what you want to teach me belongs to?')
+if ask_user ==  'pitch' or 'Pitch' or 'Frequency' or 'frequency' or 'Fundamental Frequency' or 'fundamental frequency' or 'F0' or 'Average Pitch' or 'average pitch':
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+print('It might be called as "Pitch""Frequency""Fundamental Frequency""F0""Average Pitch"', 'or', teach_the_dict, 'for "pitch" now.' )
+
+if ask_user ==  'F2' or 'F^2':
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+print('It might be called as "F2" or "F^2" or', teach_the_dict, 'for second formant transition now.' )
+
+if ask_user ==  'rate' or 'Rate' or 'Speaking Rate' or 'speaking rate':
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+print('It might be called as "Rate"Speaking Rate" or', teach_the_dict, 'for speaking rate now.' )
+
+if ask_user ==  'SPT' or 'SPTa' or 'SPTb' or 'SPT(%)a' or 'SPT(%)b' or 'Pause Average Length' or 'pause average length' or 'Duration of Pauses' or 'duration of pauses' or 'P(%)' or 'P' or 'Pausetime' or 'pausetime':
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+print('It might be called as "SPT""SPTa""SPTb""SPT(%)a""SPT(%)b""Pause Average Length""Duration of Pauses""P(%)""P""Pausetime" or', teach_the_dict, 'for speech pause time now.' )
+
+if ask_user ==  'F0Δ' or 'Inflection' or 'inflection' or 'PPR' or 'APR':
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+print('It might be called as "F0Δ""Inflection""PPR""APR" or', teach_the_dict, 'for pitch range(APR stands for average pitch range) now.' )
+
+
+if ask_user ==  'Pause' or 'Frequency of Pauses' or 'frequency of pauses':
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+print('It might be called as "Pause""Frequency of Pauses"', teach_the_dict, 'for pause number now.' )
+
+if ask_user ==  'Mean Duration of Vocalizations' or 'mean duration of vocalizations' or 'Phonation Time' or 'phonation time':
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+print('It might be called as "Mean Duration of Vocalizations""Phonation Time" or', teach_the_dict, 'for speaking time now.' )
+
+if ask_user ==  'Amplitude' or 'amplitude' or 'Loudness' or 'loudness'or 'Emphasis' or 'emphasis':
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+print('It might be called as "Amplitude" or "Loudness" (Emphasis is used to measure the variability of amplitude) or', teach_the_dict, 'for for the volumn of speaking now.' 
