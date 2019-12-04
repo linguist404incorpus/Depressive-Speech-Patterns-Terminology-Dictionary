@@ -1,0 +1,77 @@
+## cell 1
+pitch_names = ['pitch', 'frequency', 'fundamental frequency', 'F0', 'average pitch']
+second_formant_transition_names = ['F2', 'F^2']
+speaking_rate_names = ['Rate', 'Speaking Rate']
+speech_pause_time_names = ['SPT', 'SPTa', 'SPTb', 'SPT(%)a', 'SPT(%)b', 'Pause Average Length', 'Duration of Pauses', 'P(%)', 'P', 'Pausetime']
+pitch_range_names = ['F0Δ', 'Inflection', 'PPR', 'APR(APR stands for average pitch range)']
+pause_numbers_names = ['Pause', 'Frequency of Pauses']
+speaking_time_names = ['Duration of Vocalization', 'Phonation Time']
+the_volumn_of_speaking_names = ['Amplitude', 'Loudeness', 'Emphasis(used to measure the variability of amplitude)']
+ask_the_dict = input('Find possible names of your variable(lowercase except for abbreviations please): ')
+if ask_the_dict in pitch_names:
+    print('It might be called as', pitch_names, '.')
+elif ask_the_dict in second_formant_transition_names:
+    print('It might be called as', second_formant_transition_names, '.')
+elif ask_the_dict in speaking_rate_names:
+    print('It might be called as', speaking_rate_names, '.')
+elif ask_the_dict in speech_pause_time_names:
+    print('It might be called as', speech_pause_time_names, '.')
+elif ask_the_dict in pitch_range_names:
+    print('It might be called as', pitch_range_names, '.')
+elif ask_the_dict in pause_numbers_names:
+    print('It might be called as', pause_numbers_names, '.')
+elif ask_the_dict in speaking_time_names:
+    print('It might be called as', speaking_time_names, '.')
+elif ask_the_dict in the_volumn_of_speaking_names:
+    print('It might be called as', the_volumn_of_speaking_names, '.')
+
+## cell 2
+ask_the_user = input('Is what you are finding among them(Yes or No)?')
+if ask_the_user == 'Yes':
+    print('Good luck with your work! Warning: The same feature might be measured in different units in different papers.')
+
+## cell 3
+if ask_the_user == 'No':
+    print('Can you help me store more possible names?')
+
+ask_user = input('Where(which feature)does what you want to teach me belongs to(lowercase please)?')
+if ask_user in pitch_names:
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+    pitch_names.append(teach_the_dict)
+    print('It might be called as', pitch_names, 'for pitch now.' )
+elif ask_user in second_formant_transition_names:
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+    pitch_names.append(teach_the_dict)
+    print('It might be called as', second_formant_transition_names, 'for pitch now.' )
+elif ask_user in speaking_rate_names:
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+    pitch_names.append(teach_the_dict)
+    print('It might be called as', speaking_rate_names, 'for pitch now.' )
+elif ask_user in speech_pause_time_names:
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+    pitch_names.append(teach_the_dict)
+    print('It might be called as', speech_pause_time_names, 'for pitch now.' )
+elif ask_user in pitch_range_names:
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+    pitch_names.append(teach_the_dict)
+    print('It might be called as', pitch_range_names, 'for pitch now.' )
+elif ask_user in pause_numbers_names:
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+    pitch_names.append(teach_the_dict)
+    print('It might be called as', pause_numbers_names, 'for pitch now.' )
+elif ask_user in speaking_time_names:
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+    pitch_names.append(teach_the_dict)
+    print('It might be called as', speaking_time_names, 'for pitch now.' )
+elif ask_user in the_volumn_of_speaking_names:
+    teach_the_dict = []
+    teach_the_dict = input('Possible name: ')
+    pitch_names.append(teach_the_dict)
+    print('It might be called as', the_volumn_of_speaking_names, 'for pitch now.' )
